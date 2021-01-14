@@ -14,6 +14,12 @@ Also contain supporting functions modified from Alex Barnett's [BIE2D](https://g
 
 Zeta corrections of the following orders use precomputed weights:  `2,4,6,8,10,16,32,40,42`. (They correspond to inputs `k =1,2,3,4,5,8,16,20,21` to the `kapur_rokhlin_sep_log.m` function.) For corrections of arbitrary orders, the `vpa` function from Symbolic Math Toolbox is required. (The test files in this repository don't require the Symbolic Toolbox.)
 
+### Example
+
+Here are some example outputs from the test files solving Stokes and Helmholtz exterior boundary value problems using high-order zeta quadratures. Convergence is shown again the number of points used on the boundary.
+
+![](bvp_convergence.png)   
+
 ### Description of the main test files:
 
 * `test_sto2d_bie.m` : solution of the Stokes Dirichlet problem exterior to a closed curve. This routine contains a convergence test.
