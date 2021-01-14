@@ -8,7 +8,9 @@ It contains corrected trapezoidal rules that are stable and high-order accurate 
 
 Author: Bowei Wu, 2020/7
 
-Also contain supporting functions modified from Alex Barnett's [BIE2D](https://github.com/ahbarnett/BIE2D) package
+- Also contain supporting functions modified from Alex Barnett's [BIE2D](https://github.com/ahbarnett/BIE2D) package
+
+- See also the related [ZetaTrap3D](https://github.com/bobbielf2/ZetaTrap3D) code for surface integrals.
 
 ### Note on dependency:
 
