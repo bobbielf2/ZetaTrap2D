@@ -10,6 +10,10 @@ Author: Bowei Wu, 2020/7
 
 Also contain supporting functions modified from Alex Barnett's [BIE2D](https://github.com/ahbarnett/BIE2D) package
 
+### Note on dependency:
+
+Zeta corrections of the following orders use precomputed weights:  `2,4,6,8,10,16,32,40,42`. (They correspond to inputs `k =1,2,3,4,5,8,16,20,21` to the `kapur_rokhlin_sep_log.m` function.) For corrections of arbitrary orders, the `vpa` function from Symbolic Math Toolbox is required. (The test files in this repository don't require the Symbolic Toolbox.)
+
 ### Description of the main test files:
 
 * `test_sto2d_bie.m` : solution of the Stokes Dirichlet problem exterior to a closed curve. This routine contains a convergence test.
