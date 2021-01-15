@@ -55,7 +55,7 @@ if (numel(s.x)==numel(t.x)) && max(abs(s.x-t.x))<1e-14 % self eval
         u = u + circ * [c(K+1:-1:2),c(2:K+1)]'/(2*pi); % local correction
     end
 else
-    % build BIO matrix (note scaled by 2*pi)
+    % build BIO matrix
     A = -.25i*ka * besselh(1,ka*r) .* real(conj(t.nx).*d)./r;
     if nargin < 5 || isempty(dens) %output matrix
         u = bsxfun(@times, A, s.w(:).'); % speed wei & prefactor

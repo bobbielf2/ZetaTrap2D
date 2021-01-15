@@ -18,7 +18,7 @@ Zeta corrections of the following orders use precomputed weights:  `2,4,6,8,10,1
 
 ### Example
 
-Here are some example outputs from the test files solving Stokes and Helmholtz exterior boundary value problems using high-order zeta quadratures. Convergence is shown again the number of points used on the boundary.
+Here are some example outputs from the test files solving Stokes and Helmholtz exterior boundary value problems using high-order zeta quadratures. Convergence is shown against the number of points used on the boundary.
 
 ![](bvp_convergence.png)   
 
