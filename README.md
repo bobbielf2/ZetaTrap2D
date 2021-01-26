@@ -6,7 +6,7 @@ This is the MATLAB code for the "zeta-corrected quadrature" accompanying the pap
 
 It contains corrected trapezoidal rules that are stable and high-order accurate for the Laplace, Helmholtz and Stokes layer potentials on smooth closed curves.
 
-Author: Bowei Wu, 2020/7
+Author: Bowei Wu, 2020/7, updated 2021/1
 
 - Also contain supporting functions modified from Alex Barnett's [BIE2D](https://github.com/ahbarnett/BIE2D) package
 
@@ -14,7 +14,7 @@ Author: Bowei Wu, 2020/7
 
 ### Note on dependency:
 
-Zeta corrections of the following orders use precomputed weights:  `2,4,6,8,10,16,32,40,42`. (They correspond to inputs `k =1,2,3,4,5,8,16,20,21` to the `kapur_rokhlin_sep_log.m` function.) For corrections of arbitrary orders, the `vpa` function from Symbolic Math Toolbox is required. (The test files in this repository don't require the Symbolic Toolbox.)
+Zeta corrections of orders up to 42 use precomputed weights. (They correspond to inputs `k <= 21` to the `kapur_rokhlin_sep_log.m` function.) For corrections of higher orders, the `vpa` function from Symbolic Math Toolbox is required. (The test files in this repository don't require the Symbolic Toolbox.)
 
 ### Example
 
