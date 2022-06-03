@@ -34,3 +34,4 @@ Supporting functions:
 * `HelmSLP.m`, `HelmDLP.m`, `HelmSLPn` : construct matrices or give values associated with Helmholtz layer potentials using native quadratures. Self-interactions are evaluated using the zeta-corrected quadrature.
 * `setupquad.m`, `StoSLP.m`, `StoDLP.m` are (modified) functions from [BIE2D](https://github.com/ahbarnett/BIE2D)
 
+TODO: add doc for hypersingular quadrature
